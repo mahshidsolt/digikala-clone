@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: var(--fontFamily), sans-serif;
+}
+:root {
+  --fontFamily: Yekan;
+  --fontNazanin: BNazanin;
+  --color-icon-low-emphasis: #a1a3a8;
+  --color-icon-high-emphasis: #424750;
+  --color-natural-1: #62666d;
+  --color-natural-2: #3f4064;
+  --color-natural-3: #23254e;
+  --color-light: #81858b;
+  --color-before: #c0c2c5;
+  --color-digired: #e4334e;
+  --color-error: #d32f2f;
+  --color-icon-secondary: #19bfd3;
+  --color-blue: #00bfd6;
+  --centerWidth: calc(100% - 200px);
+}
+@font-face {
+  font-family: Yekan;
+  src: url(../../fonts/yekan/IRANYekanWeb.eot);
+  src: url(../../fonts/yekan/IRANYekanWeb.woff);
+  src: url(../../fonts/yekan/IRANYekanWeb.woff2);
+  src: url(../../fonts/yekan/IRANYekanWeb.ttf);
+}
+.swiper-rtl .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  font-weight: bolder;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+.swiper-rtl .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 12px;
+  color: #2b2b2b;
+}

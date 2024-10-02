@@ -1,0 +1,218 @@
+.amazing-suggestions {
+    width: 100%;
+    height: 440px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .amazing-suggestions .container {
+    width: 100%;
+    height: inherit;
+    background-color: var(--color-digired);
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+  .amazing-suggestions .container .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 170px;
+    height: inherit;
+  }
+  .amazing-suggestions .container .intro img {
+    width: 90px;
+  }
+  .amazing-suggestions .container .intro .clock {
+    width: 110px;
+    height: 30px;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .amazing-suggestions .container .intro .clock span {
+    color: #fff;
+    font-weight: bold;
+  }
+  .amazing-suggestions .container .intro a {
+    text-decoration: none;
+  }
+  .amazing-suggestions .container .intro a .text {
+    display: flex;
+  }
+  .amazing-suggestions .container .intro a .text span {
+    font-size: 12px;
+    color: white;
+  }
+  .amazing-suggestions .container .intro .clock .number {
+    width: 30px;
+    height: inherit;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #23254e;
+  }
+  
+  .amazing-suggestions .container {
+    .amazing-suggestions-swiper {
+      width: calc(100% - 170px);
+      height: 100%;
+      margin-top: 20px;
+    }
+  
+    .swiper-slide {
+        margin-top:20px;
+      height: 80%;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 7px;
+    }
+  
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-rtl .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      font-weight: bolder;
+      border-radius: 50%;
+      border: 1px solid lightgrey;
+    }
+    .swiper-rtl .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+      font-size: 12px;
+      color: #2b2b2b;
+    }
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+      display: none;
+    }
+  }
+  
+  .amazing-suggestions .container .amazing-suggestions-swiper .swiper-wrapper .swiper-slide .all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 20px;
+  
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid var(--color-icon-secondary);
+      width: 51.2px;
+      height: 51.2px;
+      border-radius: 50%;
+    }
+    a {
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--color-natural-2);
+    }
+  }
+  
+  .amazing-suggestions
+    .container
+    .amazing-suggestions-swiper
+    .swiper-wrapper
+    .swiper-slide
+    .product {
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    img {
+      display: inline-block;
+      align-items: center;
+      width: 132px;
+      height: 132px;
+    }
+  
+    box-sizing: border-box;
+    .bar {
+      width: 100%;
+      height: 25px;
+      display: flex;
+      flex-flow: row wrap;
+      .percent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: inherit;
+        .rectangle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #d32f2f;
+          width: 34px;
+          height: 20px;
+          border-radius: 10px;
+          span {
+            font-size: 12px;
+            color: white;
+            font-weight: 700;
+            line-height: 2.17px;
+          }
+        }
+      }
+      .price {
+        width: 70%;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px;
+        img {
+          margin-right: 5px;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    .caption {
+      margin-top: 5px;
+      font-size: 12px;
+      color: var(--color-natural-1);
+      display: -webkit-box;
+      align-items: start;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 20px;
+    }
+    span {
+      color: var(--color-natural-2);
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  #before {
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--color-before);
+    text-decoration: line-through;
+    position: relative;
+    right: 35px;
+  }
+  #IncredibleOffer{
+    width:140px;
+    height:16px;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,209 @@
+header {
+  width: 100%;
+  /* height: 650px; */
+}
+.banner {
+  width: 100%;
+  height: 60px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* header > register */
+.register {
+  background-color: white;
+  z-index: 1;
+  width: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  height: 70px;
+}
+
+.register .logo {
+  width: 10%;
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.register .searchbar {
+  width: 70%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  input[type="text"] {
+    width: 600px;
+    height: 45px;
+    background-color: #f0f0f1;
+    border-radius: 7px;
+    padding-right: 60px;
+    &::placeholder {
+      font-family: var(--fontFamily);
+      color: #a0a0a0;
+      font-size: 12px;
+    }
+    &:focus{
+      outline: none;
+      caret-color:var(--color-icon-secondary);
+    }
+  }
+  img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    right: 40px;
+    color: #a1a3a8;
+    /* background-color: #a0a0a0; */
+  }
+}
+.register .login {
+  padding-left: 10px;
+  width: 20%;
+  height: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+.register .login .url {
+  width: 220px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register .login .url .loginBtn {
+  width: 135px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  border: 1px solid lightgrey;
+}
+.register .login .url .loginBtn nav {
+  width: inherit;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register .login .url .loginBtn nav a,
+.register .login .url .loginBtn nav span {
+  padding: 3px;
+  font-family: var(--fontFamily);
+  font-size: 12px;
+  color: #1b1b1b;
+  font-weight: 600;
+  text-decoration: none;
+  column-gap: 10px;
+  box-sizing: border-box;
+}
+#signInChar {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+#plainLine {
+  position: relative;
+  right: 10px;
+  width: 1px;
+  height: 20px;
+  background-color: lightgrey;
+}
+.register .login .cartOff a {
+  position: relative;
+  right: 20px;
+}
+/* end header > register */
+
+/* header > menu */
+header .menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 1px 0 0 #c4c4c4;
+  align-items: flex-start;
+  padding-top: 10px;
+  position: relative;
+}
+header .menu .menuBar {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+header .menu .menuBar ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding-right: 20px;
+  column-gap: 10px;
+}
+header .menu .menuBar ul li {
+  width: fit-content;
+  height: inherit;
+  display: flex;
+}
+header .menu .menuBar ul li a {
+  display: block;
+  width: fit-content;
+  height: inherit;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--color-natural-1);
+  padding: 0 5px;
+}
+header .menu .menuBar ul li a svg,header .menu .menuBar ul li a img{
+  position: relative;
+  top:4px;
+}
+#menu-bar {
+  margin-top: -3px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-icon-high-emphasis);
+  svg {
+    position: relative;
+    top: 5px;
+  }
+}
+header .menu .menuBar ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  position: relative;
+  background-color: #ea1943;
+  transition: 300ms ease-in-out;
+}
+#menu-bar::after {
+  all: unset;
+}
+header .menu .menuBar ul li a:hover::after {
+  width: 100%;
+}
+header .menu .location {
+  text-decoration: none;
+  width: 15%;
+  margin-top: 5px;
+}
+header .menu .location .container {
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+  color: #3f4064;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2.17;
+  svg {
+    margin-left: 5px;
+  }
+}
+

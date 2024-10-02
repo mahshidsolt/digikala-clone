@@ -1,0 +1,64 @@
+.items {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.items .itemsContainer {
+    justify-content: space-between;
+  width: var(--centerWidth);
+  height: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
+.items .itemsContainer .icons {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+  flex-flow: column wrap;
+  padding-top: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  box-sizing: border-box;
+}
+.items .itemsContainer .icons a {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-decoration: none;
+}
+
+.items .itemsContainer .icons a .imgContainer img {
+  width: 52px ;
+  height: 52px ;
+}
+.items .itemsContainer .icons a .text, #unique{
+  width: 60px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  font-size: 11px;
+  color: var(--color-natural-2);
+  font-weight: 600;
+  line-height: 20px;
+}
+.items .itemsContainer .icons .circleContainer{
+    width: 60px;
+    height: 60px;
+}
+.items .itemsContainer .icons .circleContainer .circle{
+    width:52px;
+    height:52px;
+    border-radius: 50%;
+    background-color: var( --color-icon-low-emphasis);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#unique{
+    padding-top: 5px;
+}

@@ -1,0 +1,50 @@
+.story {
+  width: 100%;
+  height: 200px;
+  margin-top: 3px;
+  position: relative;
+}
+.story {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    display: none;
+  }
+}
+.story .swiper-slide .item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 15px 0;
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  a {
+    margin-top: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+  }
+}
